@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PushRouter.Sample.OrderPage"
+             Title="Order">
+
+    <VerticalStackLayout Padding="24" Spacing="12">
+        <Label Text="Opened from a push route"
+               FontSize="22"
+               FontAttributes="Bold" />
+        <Label x:Name="DetailLabel"
+               Text="Waiting for query..."
+               LineBreakMode="WordWrap" />
+    </VerticalStackLayout>
+</ContentPage>
