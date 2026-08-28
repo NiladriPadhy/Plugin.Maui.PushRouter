@@ -15,9 +15,9 @@
 		<RootNamespace>Plugin.Maui.PushRouter</RootNamespace>
 		<AssemblyName>Plugin.Maui.PushRouter</AssemblyName>
 		<PackageId>Plugin.Maui.PushRouter</PackageId>
-		<Title>.NET MAUI Push Router Plugin</Title>
+		<Title>.NET MAUI PushRouter — FCM and APNs to Shell</Title>
 		<Description>Route FCM and APNs push notifications to handlers and MAUI screens on Android and iOS. Parse payloads, dispatch by route/type, and navigate Shell pages from notification taps.</Description>
-		<PackageTags>dotnet-maui;maui;push;notifications;fcm;apns;firebase;routing;deeplink;android;ios;plugin</PackageTags>
+		<PackageTags>dotnet-maui;maui;maui-plugin;maui-utilities;cross-platform;android;ios;nuget;nugetworld;push;notifications;fcm;apns;firebase;routing;deeplink;shell</PackageTags>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
 		<PackageProjectUrl>https://github.com/NiladriPadhy/Plugin.Maui.PushRouter</PackageProjectUrl>
@@ -26,14 +26,14 @@
 		<Authors>NugetWorld</Authors>
 		<Company>NugetWorld</Company>
 		<Copyright>Copyright © NugetWorld</Copyright>
-		<Version>1.0.1</Version>
+		<Version>1.0.2</Version>
 		<PackageOutputPath>$(MSBuildThisFileDirectory)..\..\artifacts</PackageOutputPath>
 		<IsPackable>true</IsPackable>
 		<IncludeSymbols>true</IncludeSymbols>
 		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
 		<PublishRepositoryUrl>true</PublishRepositoryUrl>
 		<EmbedUntrackedSources>true</EmbedUntrackedSources>
-		<PackageReleaseNotes>Include the Buy Me a Coffee support section in the package README.</PackageReleaseNotes>
+		<PackageReleaseNotes>LLM-friendly README, llms.txt, AGENTS.md, and improved NuGet title/tags for coding-agent discoverability.</PackageReleaseNotes>
 	</PropertyGroup>
 
 	<ItemGroup>

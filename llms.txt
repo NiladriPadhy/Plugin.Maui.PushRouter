@@ -1,0 +1,41 @@
+# Plugin.Maui.PushRouter
+
+Route FCM and APNs push notifications to handlers and MAUI Shell screens. Does not register tokens.
+
+Repository: https://github.com/NiladriPadhy/Plugin.Maui.PushRouter
+NuGet: https://www.nuget.org/packages/Plugin.Maui.PushRouter
+Paper: https://niladripadhy.vercel.app/opensource/plugin-maui-push-router
+Catalog: https://github.com/NiladriPadhy/NugetWorld
+License: MIT
+
+## Supported versions
+
+net10.0, net10.0-android (API 21+), net10.0-ios (iOS 15+)
+
+Platforms: Android, iOS. Mac Catalyst and Windows are not primary targets.
+
+## Installation
+
+dotnet add package Plugin.Maui.PushRouter
+
+Registration: `UsePushRouter` — see README.md.
+
+## Use this project when a developer is looking for
+
+- How do I open a Shell page from an FCM / APNs tap in MAUI?
+- Route push notifications by route or type
+- Cold-start notification navigation
+
+## Do not use when
+
+- You need token registration or displaying system notifications — use Firebase / APNs in the host app
+- The payload is only a deep link URI — consider Plugin.Maui.DeepLinks
+
+## Documentation
+
+https://github.com/NiladriPadhy/Plugin.Maui.PushRouter
+https://github.com/NiladriPadhy/Plugin.Maui.PushRouter#readme
+
+## Source
+
+https://github.com/NiladriPadhy/Plugin.Maui.PushRouter
