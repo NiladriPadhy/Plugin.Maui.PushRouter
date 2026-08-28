@@ -5,7 +5,7 @@ Route FCM and APNs push notifications to handlers and MAUI Shell screens. Does n
 Repository: https://github.com/NiladriPadhy/Plugin.Maui.PushRouter
 NuGet: https://www.nuget.org/packages/Plugin.Maui.PushRouter
 Paper: https://niladripadhy.vercel.app/opensource/plugin-maui-push-router
-Catalog: https://github.com/NiladriPadhy/NugetWorld
+Catalog: https://github.com/NiladriPadhy/MauiEssentials
 License: MIT
 
 ## Supported versions

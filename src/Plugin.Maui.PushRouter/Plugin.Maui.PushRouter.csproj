@@ -17,15 +17,15 @@
 		<PackageId>Plugin.Maui.PushRouter</PackageId>
 		<Title>.NET MAUI PushRouter — FCM and APNs to Shell</Title>
 		<Description>Route FCM and APNs push notifications to handlers and MAUI screens on Android and iOS. Parse payloads, dispatch by route/type, and navigate Shell pages from notification taps.</Description>
-		<PackageTags>dotnet-maui;maui;maui-plugin;maui-utilities;cross-platform;android;ios;nuget;nugetworld;push;notifications;fcm;apns;firebase;routing;deeplink;shell</PackageTags>
+		<PackageTags>dotnet-maui;maui;maui-plugin;maui-utilities;cross-platform;android;ios;nuget;mauiessentials;push;notifications;fcm;apns;firebase;routing;deeplink;shell</PackageTags>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
 		<PackageProjectUrl>https://github.com/NiladriPadhy/Plugin.Maui.PushRouter</PackageProjectUrl>
 		<RepositoryUrl>https://github.com/NiladriPadhy/Plugin.Maui.PushRouter</RepositoryUrl>
 		<RepositoryType>git</RepositoryType>
-		<Authors>NugetWorld</Authors>
-		<Company>NugetWorld</Company>
-		<Copyright>Copyright © NugetWorld</Copyright>
+		<Authors>MauiEssentials</Authors>
+		<Company>MauiEssentials</Company>
+		<Copyright>Copyright © MauiEssentials</Copyright>
 		<Version>1.0.2</Version>
 		<PackageOutputPath>$(MSBuildThisFileDirectory)..\..\artifacts</PackageOutputPath>
 		<IsPackable>true</IsPackable>
