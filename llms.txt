@@ -14,6 +14,10 @@ net10.0, net10.0-android (API 21+), net10.0-ios (iOS 15+)
 
 Platforms: Android, iOS. Mac Catalyst and Windows are not primary targets.
 
+## Current release
+
+1.0.6 (3 September 2026). Navigation uses registered Map keys or DefaultRoute only. Raw payload Shell paths are ignored unless AllowUnmappedPayloadRoutes = true.
+
 ## Installation
 
 dotnet add package Plugin.Maui.PushRouter
