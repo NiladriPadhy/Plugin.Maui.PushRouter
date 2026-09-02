@@ -14,6 +14,7 @@ public static class MauiProgram
 			{
 				options.EnableLogging = true;
 				options.NavigateOnTapOnly = true;
+				options.AllowUnmappedPayloadRoutes = false;
 				options.Map("order", "//order?id={orderId}");
 				options.Map("chat", "//chat?thread={threadId}");
 				options.Handle("silent", context =>

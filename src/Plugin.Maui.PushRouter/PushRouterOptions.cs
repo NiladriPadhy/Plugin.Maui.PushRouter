@@ -41,6 +41,13 @@ public sealed class PushRouterOptions
 	public string? DefaultRoute { get; set; }
 
 	/// <summary>
+	/// When <c>true</c>, a payload value that looks like a Shell path is used even if it is not
+	/// in <see cref="Map(string, string)"/>. Default is <c>false</c> — only registered maps and
+	/// <see cref="DefaultRoute"/> may navigate.
+	/// </summary>
+	public bool AllowUnmappedPayloadRoutes { get; set; }
+
+	/// <summary>
 	/// Gets or sets a value indicating whether mapped routes are opened with <see cref="IPushNavigator"/>.
 	/// Default is <c>true</c>.
 	/// </summary>

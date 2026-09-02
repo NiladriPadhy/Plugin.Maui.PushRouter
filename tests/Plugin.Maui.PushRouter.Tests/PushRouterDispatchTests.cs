@@ -76,14 +76,32 @@ public sealed class PushRouterDispatchTests
 	}
 
 	[Fact]
-	public async Task Path_In_Route_Is_Used_Directly()
+	public async Task Path_In_Route_Is_Rejected_By_Default()
 	{
 		var (router, navigator) = RouterFactory.Create();
+		PushUnhandledEventArgs? unhandled = null;
+		router.Unhandled += (_, e) => unhandled = e;
 
 		var result = await router.HandleTappedAsync(new Dictionary<string, string>
 		{
 			["route"] = "//inbox/detail?id=7",
 			["google.message_id"] = "m-path"
+		});
+
+		Assert.False(result.Navigated);
+		Assert.Empty(navigator.Routes);
+		Assert.NotNull(unhandled);
+	}
+
+	[Fact]
+	public async Task Path_In_Route_Is_Used_When_Unmapped_Routes_Allowed()
+	{
+		var (router, navigator) = RouterFactory.Create(o => o.AllowUnmappedPayloadRoutes = true);
+
+		var result = await router.HandleTappedAsync(new Dictionary<string, string>
+		{
+			["route"] = "//inbox/detail?id=7",
+			["google.message_id"] = "m-path-optin"
 		});
 
 		Assert.True(result.Navigated);

@@ -35,6 +35,7 @@ builder
         options.RouteKey = "route";
         options.TypeKey = "type";
         options.NavigateOnTapOnly = true;
+        options.AllowUnmappedPayloadRoutes = false;
 
         options.Map("order", "//order?id={orderId}");
         options.Map("chat", "//chat?thread={threadId}");
@@ -89,7 +90,7 @@ Send a `route` (or `type`) in the data payload.
 }
 ```
 
-`route` may also be a Shell path: `"//order?id=1842"`.
+By default `route` must match a `Map` key or `DefaultRoute`. A raw Shell path such as `"//order?id=1842"` is ignored unless you set `AllowUnmappedPayloadRoutes = true`.
 
 `{orderId}` tokens in `Map` are replaced from the payload and URL-encoded.
 

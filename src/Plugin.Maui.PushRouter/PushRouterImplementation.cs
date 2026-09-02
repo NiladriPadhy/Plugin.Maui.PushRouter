@@ -278,12 +278,15 @@ sealed class PushRouterImplementation : IPushRouter
 		if (!string.IsNullOrWhiteSpace(map?.Template))
 			return RouteTemplate.Expand(map.Template, notification.Data);
 
+		if (!string.IsNullOrWhiteSpace(Options.DefaultRoute))
+			return RouteTemplate.Expand(Options.DefaultRoute, notification.Data);
+
+		if (!Options.AllowUnmappedPayloadRoutes)
+			return null;
+
 		var raw = notification.Route ?? PayloadLookup.Get(notification.Data, Options.RouteKey);
 		if (!string.IsNullOrWhiteSpace(raw) && RouteKeyResolver.IsPath(raw))
 			return raw;
-
-		if (!string.IsNullOrWhiteSpace(Options.DefaultRoute))
-			return RouteTemplate.Expand(Options.DefaultRoute, notification.Data);
 
 		if (!string.IsNullOrWhiteSpace(routeKey) && RouteKeyResolver.IsPath(routeKey))
 			return routeKey;
